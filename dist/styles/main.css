@@ -28,7 +28,18 @@ a {
 
 p {
   color: white;
-  font-size: 1.2vw;
+}
+
+@media (min-width: 1000px) {
+  p {
+    font-size: 1.2 vw;
+  }
+}
+
+@media (max-width: 999px) {
+  p {
+    font-size: 3vw;
+  }
 }
 
 abbr[title] {
@@ -863,7 +874,7 @@ h6 {
 }
 
 .o-scroll {
-  margin-left: 80px;
+  margin-left: 5vw;
   overflow: hidden;
 }
 
@@ -1051,7 +1062,7 @@ html.has-scroll-dragging {
 }
 
 .c-header {
-  margin-left: -80px;
+  margin-left: -2vw;
   position: relative;
   text-align: center;
   margin-top: 10vw;
@@ -1525,6 +1536,7 @@ html:not(.has-scroll-smooth) .c-fixed {
 .c-speed-block_image {
   margin-bottom: -30px;
   margin-top: -30px;
+  opacity: 1;
 }
 
 .c-speed-block_title {
@@ -2189,10 +2201,10 @@ html[data-direction="up"] .c-choochoo_item.-reverse span {
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 40px;
+  font-size: 3vw;
   cursor: pointer;
   color: white;
-  padding: 10px 15px;
+  padding: 0.3vw 0.3vw;
   border: none;
   background: transparent;
 }
@@ -2216,39 +2228,6 @@ html[data-direction="up"] .c-choochoo_item.-reverse span {
   }
   .sidebar a {
     font-size: 18px;
-  }
-}
-
-.mousey {
-  width: 3px;
-  padding: 10px 15px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-  animation-iteration-count: infinite;
-}
-@keyframes scroll {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(15px);
-    opacity: 0;
   }
 }
 
