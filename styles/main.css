@@ -117,6 +117,9 @@ body {
   h3 {
     font-size: 6vw;
   }
+  p {
+    font-size: 20px;
+  }
 }
 
 h1 {
@@ -711,13 +714,16 @@ a {
   overflow: hidden;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
   .sidebar {
     padding-top: 15px;
   }
   .sidebar a {
-    font-size: 18px;
+    font-size: 30px;
+  }
+  .sidebar .closebtn {
+    font-size: 7vh;
   }
 }
 
@@ -748,7 +754,7 @@ a {
   background-size: 100% 100%;
   animation: gradient 15s ease infinite;
   height: 100%;
-
+  display: block;
   overflow: hidden;
   position: relative;
 }
