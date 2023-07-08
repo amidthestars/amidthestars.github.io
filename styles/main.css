@@ -32,11 +32,6 @@ body {
 }
 
 body {
-  background: linear-gradient(-45deg, #d68665, #138086, #534666, #cd7672);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,8 +53,6 @@ body {
 .card {
   width: 75%;
   height: 80%;
-  display: flex;
-  flex-direction: column;
 
   padding: 35px;
 
@@ -69,8 +62,8 @@ body {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 
   backdrop-filter: blur(15px);
-  z-index: 4;
-  position: relative;
+  position: absolute;
+  z-index: 10;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -173,7 +166,7 @@ a {
   color: #4670af;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .flex-container {
     flex-direction: column;
   }
@@ -205,7 +198,7 @@ a {
   position: absolute;
   left: 70%;
   top: 50%;
-  z-index: -5;
+  z-index: 3;
 }
 
 .shape-blob.one {
@@ -216,7 +209,7 @@ a {
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate,
     movement_two 60s ease-in-out infinite both;
-  z-index: -5;
+  z-index: 3;
 }
 
 .shape-blob.two {
@@ -227,7 +220,7 @@ a {
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate,
     movement_two 60s ease-in-out infinite both;
-  z-index: -5;
+  z-index: 3;
 }
 
 @keyframes transform {
@@ -373,7 +366,7 @@ a {
   outline: 1px solid transparent;
   -webkit-perspective: inherit;
   perspective: inherit;
-  z-index: 2;
+  z-index: 20;
 }
 
 .container .back {
@@ -474,7 +467,7 @@ a {
 
     i {
       position: relative;
-      z-index: 3;
+      z-index: 20;
     }
 
     &:last-child {
@@ -541,7 +534,7 @@ a {
   i,
   svg {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     transition: 0.3s;
   }
 
@@ -651,7 +644,6 @@ a {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
   background-color: rgb(48, 41, 62); /* Black*/
@@ -750,7 +742,16 @@ a {
 }
 
 .boguswrapper {
-  overflow: hidden;
+  background: linear-gradient(-45deg, #d68665, #138086, #534666, #cd7672);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+  overflow-x: hidden;
   position: relative;
-  background-color: transparent;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
