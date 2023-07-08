@@ -1,50 +1,21 @@
 <!DOCTYPE html>
-<html class="is-smooth-scroll-compatible is-loading" lang="en">
+<html class="is-smooth-scroll-compatible is-loading">
   <head>
-    <meta charset="utf-8" />
     <title>Claire Huang's Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" sizes="152x152" href="dist/images/icon.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="dist/images/icon.png"
+      href="styles/images/icon.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="dist/images/icon.png"
-    />
-    <link rel="mask-icon" href="dist/images/icon.png" color="#000000" />
-
-    <link rel="stylesheet" href="dist/styles/main.css" />
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-144274538-1");
-    </script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <script src="./main.js"></script>
   </head>
-
   <body>
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">&#9776;</button>
-    </div>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
 
-    <div class="o-scroll" id="js-scroll" data-scroll-container>
-      <div
+    <div
         id="mySidebar"
         class="sidebar"
         data-scroll-sticky
@@ -53,425 +24,679 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <a href="#header" data-scroll-to> HOME </a>
-        <a href="#about-me" data-scroll-to> ABOUT </a>
-        <a href="#my-work" data-scroll-to> WORK </a>
-        <a href="#my-projects" data-scroll-to> PROJECTS </a>
-        <a href="#lerp-effect" data-scroll-to> CONTACT </a>
+        <a href="#homepage-top"> HOME </a>
+        <a href="#about-me"> ABOUT </a>
+        <a href="#my-work"> WORK </a>
+        <a href="#photos"> PHOTOS </a>
+        <a href="#contact"> CONTACT </a>
       </div>
-      <div data-scroll-section>
-        <div class="o-container">
-          <header class="c-header" id="header">
-            <h1 class="c-header_title o-h1" data-scroll>
-              <span class="c-header_title_line">
-                <span
-                  data-scroll
-                  data-scroll-speed="3"
-                  data-scroll-position="top"
-                  >Claire Huang</span
-                >
-              </span>
-              <span class="c-header_title_line -version u-white">
-                <span
-                  class="o-h2"
-                  data-scroll
-                  data-scroll-speed="3"
-                  data-scroll-position="top"
-                  data-scroll-delay="0.05"
-                  >software + graphic design</span
-                >
-              </span>
-            </h1>
-            <div
-              class="scroll-downs"
-              id="scroll-button"
-              data-scroll
-              data-scroll-speed="4"
-            ></div>
-          </header>
+    </div>
+    <div class="card" >
+      <h1 id="homepage-top">CLAIRE HUANG</h1>
+      <h2>SOFTWARE / DESIGNER</h2>
+      <div class="flex-container" id="about-me">
+        <div class="flex-child">
+          <br />
+        <br />
+
+          <h3>Hello!</h3>
+          <br />
+          <h4>My name is Claire Huang, and I love to tell stories.</h4>
+          <br />
+          <p>
+            Whether it's through a website like this one; through my hobbies of
+            digital art, music/songwriting, writing; or through creating natural
+            language processing models for chatbots, I'm always drawn to the
+            challenge of bottling emotions or experiences. Through my various
+            work with volunteering in underprivileged communities and mental
+            health awareness, I've had the privilege of helping others tell
+            their stories as well.
+          </p>
+          <br />
+          <p>
+            I currently study at University of California, Los Angeles, where
+            I'm fortunate enough to be among extremely talented and wonderful
+            peers and faculty. My goal is to continue tackling communication
+            problems with machine learning and natural language processing, so
+            if you have anything exciting, just let me know!
+          </p>
+          <br />
+        </div>
+
+        <div class="flex-child">
+          <br />
+        <br />
+
+          <img
+            class="item"
+            src="./styles/images/IMG_7140.jpg"
+            alt="A picture of Claire in La Jolla"
+          />
         </div>
       </div>
 
-      <section class="c-section" data-scroll-section>
-        <div class="o-container" id="about-me">
-          <div class="o-layout -gutter">
-            <div class="o-layout_item u-2/5@from-medium">
-              <div
-                class="c-section_infos -padding"
-                data-scroll
-                data-scroll-speed="4"
-                data-scroll-call="test"
-              >
-                <div
-                  class="c-section_infos_inner"
-                  data-scroll
-                  data-scroll-offset="200"
-                >
-                  <h2>Hello!</h2>
-                  <br />
-                  <h3>I'm Claire Huang, and I love to tell stories.</h3>
-                  <div class="c-sections_infos_text u-text">
-                    <p>
-                      Whether it's through a website like this one; through my
-                      hobbies of digital art, music/songwriting, writing; or
-                      through creating natural language processing models for
-                      chatbots, I'm always drawn to the challenge of bottling
-                      emotions or experiences. Through my various work with
-                      volunteering in underprivileged communities and mental
-                      health awareness, I've had the privilege of helping others
-                      tell their stories as well.
-                    </p>
-                    <br />
-                    <p>
-                      I currently study at University of California, Los
-                      Angeles, where I'm fortunate enough to be among extremely
-                      talented and wonderful peers and faculty. My goal is to
-                      continue tackling communication problems with machine
-                      learning and natural language processing, so if you have
-                      anything exciting, just let me know!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="o-layout_item u-3/5@from-medium">
-              <div class="c-speed-block" data-scroll data-scroll-speed="2">
-                <div class="o-image_wrapper" data-scroll data-scroll-repeat>
-                  <div class="o-image" data-scroll>
-                    <br />
-                    <img
-                      class="c-speed-block_image"
-                      src="dist/images/itsme.jpeg"
-                      alt="It's me! Hello!"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="c-section" data-scroll-section>
-        <div class="o-container" id="my-work">
+      <div class="flex-container" id="my-work">
+        
+        <div class="flex-child">
           <br />
-          <h2>MY WORK</h2>
-          <div class="o-layout -gutter">
-            <div class="o-layout_item u-2/5@from-medium">
-              <div
-                class="c-section_infos -padding"
-                data-scroll
-                data-scroll-speed="4"
-                data-scroll-call="test"
-              >
-                <div
-                  class="c-section_infos_inner"
-                  data-scroll
-                  data-scroll-offset="200"
-                >
-                  <br />
-                  <h3>
-                    Undergraduate Researcher <br />
-                    <br />
-                  </h3>
-                  <h4>
-                    Professor CJ Kim,
-                    <a href="https://www.cjkimlab.ucla.edu/"
-                      >Micro and Nano Manufacturing Laboratory</a
-                    >
-                    <br />
-                    <br />
-                    November 2021 - Present
-                  </h4>
+        <br />
+        <br />
 
-                  <div class="c-sections_infos_text u-text">
-                    <p>
-                      Studied deep learning approaches to automate measuring the
-                      contact angle measurements for water droplets.
-                    </p>
-                    <br />
-                    <p>
-                      Expanded the range of measurable angles for water droplets
-                      to allow for more quick, accessible measurements.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="o-layout_item u-3/5@from-medium">
-              <div class="c-speed-block" data-scroll data-scroll-speed="2">
-                <div class="o-image_wrapper" data-scroll data-scroll-repeat>
-                  <div class="o-image" data-scroll>
-                    <img
-                      class="c-speed-block_image"
-                      src="dist/images/droplet.jpg"
-                      alt="A drop of liquid."
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="o-layout -gutter">
-            <div class="o-layout_item u-2/5@from-medium">
-              <div
-                class="c-section_infos -padding"
-                data-scroll
-                data-scroll-speed="4"
-                data-scroll-call="test"
-              >
-                <div
-                  class="c-section_infos_inner"
-                  data-scroll
-                  data-scroll-offset="200"
-                >
-                  <br />
-                  <h3>
-                    Software Designer <br />
-                    <br />
-                  </h3>
-                  <h4>
-                    Implementation of Computation Group, UPenn
-                    <br />
-                    <br />
-                    June 2020 - September 2020
-                  </h4>
-                  <div class="c-sections_infos_text u-text">
-                    <p>
-                      Accelerated a C version of the Krusell-Smith method, a
-                      stochastic economic simulation, with Upenn's
-                      Implementation of Computation Group.
-                    </p>
-                    <br />
-                    <p>
-                      Developed a logarithmic search and table lookup method
-                      that sped up runtime by 36%.
-                    </p>
-                    <br />
-                    <p>Implemented DFT that automated testing.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="o-layout_item u-3/5@from-medium">
-              <div class="c-speed-block" data-scroll data-scroll-speed="2">
-                <div class="o-image_wrapper" data-scroll data-scroll-repeat>
-                  <div class="o-image" data-scroll>
-                    <img
-                      class="c-speed-block_image"
-                      src="dist/images/econ.png"
-                      alt="A graph of an economic situation."
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="c-section" data-scroll-section>
-        <div class="o-container" id="my-projects">
+          <h3>MY WORK</h3>
           <br />
-          <h2>Projects</h2>
+          <h4>AIML Intern at Apple</h4>
           <br />
-          <div class="o-layout -gutter">
-            <div class="o-layout_item u-2/5@from-medium">
-              <div
-                class="c-section_infos -padding"
-                data-scroll
-                data-scroll-speed="4"
-                data-scroll-call="test"
-              >
-                <div
-                  class="c-section_infos_inner"
-                  data-scroll
-                  data-scroll-offset="200"
-                >
-                  <h3>Redbubble</h3>
+          <h5>Siri Video Experience Team</h5>
+          <br />
+          <h5>June 2023 - Sept 2023</h5>
+          <br />
+          <p>Top secret :)</p>
+          <br />
+        </div>
 
-                  <div class="c-sections_infos_text u-text">
-                    <p>
-                      Here's a
-                      <a
-                        href="https://www.redbubble.com/people/claireaudient/shop"
-                        >link</a
-                      >
-                      to my shop!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="o-layout_item u-2/5@from-medium">
-              <div class="c-speed-block" data-scroll data-scroll-speed="2">
-                <div class="o-image_wrapper" data-scroll data-scroll-repeat>
-                  <div class="o-image" data-scroll>
-                    <img
-                      class="c-speed-block_image"
-                      src="dist/images/redbubble.png"
-                      alt="A yes cat sticker on a generic water bottle."
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="o-layout -gutter">
-            <div class="o-layout_item u-4/5@from-medium">
-              <div
-                class="c-section_infos_right -padding"
-                data-scroll
-                data-scroll-speed="4"
-                data-scroll-call="test"
-              >
-                <div
-                  class="c-section_infos_inner u-text-right"
-                  data-scroll
-                  data-scroll-offset="200"
-                >
-                  <h3>Graphic Design Portfolio</h3>
+        <div class="flex-child">
+          <br />
+        <br />
+        <br />
+          <img
+            class="item"
+            src="./styles/images/seattle.jpg"
+            alt="A picture of Claire in La Jolla"
+          />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="flex-container" id="my-work">
+        <br />
+        <div class="flex-child">
+          <h4>Undergraduate Researcher</h4>
+          <br />
+          <h5>
+            Professor CJ Kim,
+            <a href="https://www.cjkimlab.ucla.edu/"
+              >Micro and Nano Manufacturing Laboratory</a
+            >
+          </h5>
+          <br />
+          <h5>November 2021 - Present</h5>
+          <br />
+          <li>
+            Created a segmentation model to detect cleaner droplet shapes.
+          </li>
+          <li>Designed a mathematical method for corner detection.</li>
+          <li>
+            In total, developed a program capable of measuring all types of
+            contact angles from droplet photos to measure the hydrophobic level
+            of surfaces.
+          </li>
+          <br />
+        </div>
 
-                  <div class="c-sections_infos_text u-text-right">
-                    <p>
-                      I taught myself graphic design as a sophomore in high
-                      school, and making this portfolio was a great way for me
-                      to show myself how far I've come!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="o-layout_item u-3/5@from-medium">
-              <div class="c-speed-block" data-scroll data-scroll-speed="2">
-                <div class="o-image_wrapper" data-scroll data-scroll-repeat>
-                  <div class="o-image" data-scroll>
-                    <img
-                      class="c-speed-block_image"
-                      src="dist/images/ephemeralpage2.jpg"
-                      alt="An advertisement spread for a green-based stationery company called Ephemeral, with products in coffee tones and recyclable packaging. In the middle, there are three pens in varying shades of brown. The slogan is 'Leave nothing but Letters.'"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="o-layout -gutter">
-            <div class="o-layout_item u-2/5@from-medium">
-              <div
-                class="c-section_infos -padding"
-                data-scroll
-                data-scroll-speed="2"
-                data-scroll-call="test"
-              >
-                <div
-                  class="c-section_infos_inner"
-                  data-scroll
-                  data-scroll-offset="200"
-                >
-                  <h3>Club Activities</h3>
+        <div class="flex-child">
+          <img
+            class="item"
+            src="./styles/images/bottom plate.jpg"
+            alt="A droplet on substrate."
+          />
+        </div>
+      </div>
+      <br />
+    
+      <h3 id="contact"></h3>
+      <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      <div class="social-buttons" >
 
-                  <div class="c-sections_infos_text u-text">
-                    <p>
-                      Currently, I'm active in ACM and IEEE at UCLA, and I do
-                      graphic design for both clubs! The largest project is
-                      <a href="https://www.ideahacks.la/">IDEAHacks</a>, an
-                      annual hardware-based hackathon.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="o-layout_item u-3/5@from-medium">
-              <div class="c-speed-block" data-scroll data-scroll-speed="2">
-                <div class="o-image_wrapper" data-scroll data-scroll-repeat>
-                  <div class="o-image" data-scroll>
-                    <img
-                      class="c-speed-block_image"
-                      src="dist/images/video.png"
-                      alt="A split up video game controller."
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+        <a
+        
+          href="https://www.instagram.com/claireaudient/"
+          class="social-button social-button--instagram"
+        >
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/claire-huang-7469091b7/"
+          class="social-button social-button--linkedin"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/amidthestars"
+          class="social-button social-button--github"
+          aria-label="GitHub"
+        >
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <h3 id="photos"></h3>
+      <br />
+        <br />
+      <h3>COOL THINGS</h3>
+
+      <p>(at least to me)</p>
+
+
+      <div class="grid-wrapper" >
+  
+        <div class="container">
+          <img src="./styles/images/ieee-1.JPG" alt="" />
+          <div class="image-caption">
+            <p>High quality bread photo, courtesy of my friend Theo</p>
           </div>
         </div>
-      </section>
-
-      <section class="c-section" data-scroll-section>
-        <div class="o-container" id="lerp-effect">
-          <div class="o-layout">
-            <div class="o-layout_item u-2/5@from-medium">
-              <div class="c-section_infos" data-scroll>
-                <div
-                  class="c-section_infos_inner"
-                  data-scroll
-                  data-scroll-offset="200"
-                >
-                  <h2>CONTACT</h2>
-                </div>
-              </div>
-            </div>
-            <div class="o-layout_item u-3/5@from-medium">
-              <br />
-              <br />
-              <div class="c-lerp-block">
-                <span
-                  class="c-lerp-block_title"
-                  data-scroll
-                  data-scroll-delay="0.6"
-                  data-scroll-speed="2"
-                >
-                  <span>
-                    <a href="https://github.com/amidthestars">GITHUB</a>
-                  </span>
-                </span>
-
-                <span
-                  class="c-lerp-block_title"
-                  data-scroll
-                  data-scroll-delay="0.1"
-                  data-scroll-speed="2"
-                >
-                  <span>
-                    <a
-                      href="https://www.linkedin.com/in/claire-huang-7469091b7/"
-                      >LINKEDIN</a
-                    >
-                  </span>
-                </span>
-                <span
-                  class="c-lerp-block_title"
-                  data-scroll
-                  data-scroll-delay="0.1"
-                  data-scroll-speed="2"
-                >
-                  <span>
-                    <a href="https://www.instagram.com/claireaudient"
-                      >INSTAGRAM</a
-                    >
-                  </span>
-                </span>
-              </div>
-              <div class="c-lerp-block"></div>
-            </div>
+        <div class="big container">
+          <img src="./styles/images/ieee-2.png" alt="" />
+          <div class="image-caption">
+            <p>
+              I was the design lead for IDEAHacks 2023, and I made all of the
+              visuals for the hackathon.
+            </p>
           </div>
         </div>
-      </section>
+        <div class="container">
+          <img src="./styles/images/ieee-3.png" alt="" />
+          <div class="image-caption">
+            <p>IDEAHaxolotl, one of the bonus designs for IDEAHacks 2023!</p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/ieee-5.jpeg" alt="" />
+          <div class="image-caption">
+            <p>A nice flower from UCLA's botanical garden!</p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/ieee-6.jpeg" alt="" />
+          <div class="image-caption">
+            <p>The Lego cherry blossom tree - my favorite Lego set to date</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/ieee-7.jpeg" alt="" />
+          <div class="image-caption">
+            <p>just sitting there</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/ieee-8.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Ducks at the Getty museum!</p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/ieee-9.jpeg" alt="" />
+          <div class="image-caption">
+            <p>First adventures on an FPGA.</p>
+          </div>
+        </div>
+        <div class="big container">
+          <img src="./styles/images/ieee-10.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Hand painted Hisuian Zoroark denim jackets!</p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/ieee-11.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Jorji the Corgi, my team's IDEAHacks 2023 project!</p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/ieee-12.jpeg" alt="" />
+          <div class="image-caption">
+            <p>he's sad :(</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/ieee-13.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              Playthrough of FPGA tetris (I'm quite proud of making the red
+              piece)
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/ieee-15.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              Every playthrough of the FPGA tetris almost seems like a different
+              painting
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/mh-1.jpg" alt="" />
+          <div class="image-caption">
+            <p>A dragonfly in my backyard!</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/mh-3.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              I sewed this frog with a pattern I found online, its name is Forg.
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/mh-4.jpeg" alt="" />
+          <div class="image-caption">
+            <p>My dad's koi</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/mh-6.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Cherries from my backyard!</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/mh-7.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Persimmons from my backyard!</p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/mh-8.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Sunset from my neighborhood.</p>
+          </div>
+        </div>
+        <div class="big container">
+          <img src="./styles/images/newyork-2.jpeg" alt="" />
+          <div class="image-caption">
+            <p>View from near Grand Central Station (I think).</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/newyork-3.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              View from the Empire State Building, the summer after my high
+              school graduation.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/newyork-4.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Kusama's exhibit at the New York Botanical Garden.</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/newyork-5.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              Personally, I really liked this exhibit. Each flower represents a
+              visitor, and over time, the sea of flowers grows until the
+              greenhouse is submerged.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/newyork-6.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              This was also one of my favorite Kusama exhibits, and it's purely
+              because it's my favorite color.
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/sea-1.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              The Space Needle. I didn't think I'd be able to see this every day
+              for a summer.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/sea-3.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Mount Rainier from Tolmie Peak, on a hike with friends</p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/sea-4.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              Mount Rainier at sunset, absolutely worth the wait. The swarms of
+              mosquitos were brutal, though...
+            </p>
+          </div>
+        </div>
+        <div class="big container">
+          <img src="./styles/images/tahoe-1.JPG" alt="" />
+          <div class="image-caption">
+            <p>Gray's Crossing, golden hour.</p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/tahoe-2.JPG" alt="" />
+          <div class="image-caption">
+            <p>
+              A nice sunset over Tahoe. It's fun to just walk up a little bit,
+              wait until it gets dark, and walk back down.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/tahoe-3.JPG" alt="" />
+          <div class="image-caption">
+            <p>
+              I brought my camera with me to Tahoe once, and this is what I took
+              pictures of.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/tahoe-4.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              Northstar - I was briefly on the ski team, but I think I only
+              started getting better at skiing after I left.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/tahoe-5.jpeg" alt="" />
+          <div class="image-caption">
+            <p>A snowman I made!</p>
+          </div>
+        </div>
+        <div class="big container">
+          <img src="./styles/images/tw-1.JPG" alt="" />
+          <div class="image-caption">
+            <p>A temple on Penghu, off the coast of Taiwan.</p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/tw-2.jpeg" alt="" />
+          <div class="image-caption">
+            <p>From Hoya Xishan, a teahouse bed and breakfast in Taichung.</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/tw-3.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              In Chinese, crab is "xie", so two crabs mean "xie xie", which
+              sounds like "thank you". Or so I was told.
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/tw-4.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              A bridge near Kaohsiung. I don't know what it's called, but it
+              looks pretty!
+            </p>
+          </div>
+        </div>
+        <div class="big container">
+          <img src="./styles/images/ukia-1.gif" alt="" />
+          <div class="image-caption">
+            <p>
+              A peacock near a Buddhist temple in Ukiah. They're so used to
+              humans!
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/cvpr-1.jpg" alt="" />
+          <div class="image-caption">
+            <p>From a Mardi-Gras float maker in New Orleans!</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/cvpr-2.jpg" alt="" />
+          <div class="image-caption">
+            <p>A pigeon made its way into the CVPR 2022 talks.</p>
+          </div>
+        </div>
+        <div class="big container">
+          <img src="./styles/images/cook-3.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Vegetarian hotpot with friends!</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/cook-4.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              The best shrimp pasta I've ever made. I have never eaten so much
+              pasta in one sitting in my life.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/cook-1.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Making lots and lots of dumplings with friends!</p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/daydreamspage1.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              Fun fact - I almost recorded a mini-album before COVID-19 hit.
+              This is not what it would've looked like, but the songs still
+              exist.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/daydreamspage2.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              It was fun to try and imagine my songs being in a tangible
+              product!
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <img src="./styles/images/draw-1.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              I saw this photo on Cara Delevigne's Instagram and knew I had to
+              draw it! If I remember correctly, this one was drawn quite fast.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/draw-2.JPG" alt="" />
+          <div class="image-caption">
+            <p>
+              I draw different profile photos every month, as a way to practice
+              consistently. I think this was January 2023's profile picture.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/ephemeralpage1.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              I really enjoy stationery, but a lot of it comes in copious
+              amounts of plastic packaging. I wanted to create a worry-free,
+              completely compostable version.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/ephemeralpage2.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              Basically, I designed something that I'd want to use and buy.
+              Unfortunately, it only exists in my mind...
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/draw-3.JPG" alt="" />
+          <div class="image-caption">
+            <p>
+              This was the start of my digital art journey. I think this is a
+              screen shot from VIXX's Shangri-La music video. This is the
+              default photo I show people when they ask to see my art.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/draw-6.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              This drawing is the one that led to my IEEE @ UCLA 2023 Publicity
+              position. I'm very thankful for the opportunities this drawing
+              gave me.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/textthevoidpage1.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              I like to make chatbots for fun, and wondered how I would
+              incorporate them into an app, for example.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/textthevoidpage2.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              Maybe I wouldn't make it this dark nowadays, but I wanted a
+              calming space for myself or others to just talk out feelings and
+              work through them with a chatbot.
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/draw-4.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              July 2022's profile picture, Yeoreum from WJSN. This is one of my
+              favorite drawings; I really like the way her hair turned out.
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/draw-5.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              My mom cut strawberries and brought them to me while I was working
+              on homework, and I snapped a picture before I ate them. There's
+              just something comforting about cutting fruit that reminds me of
+              childhood. Almost like I'm doing this to take care of myself, like
+              my mom took care of me.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/roadtrippage1.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              Another album idea! Most of these songs were written while on a
+              road trip, so the name is very literal.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/roadtrippage2.jpg" alt="" />
+          <div class="image-caption">
+            <p>
+              I really liked the retro vibe with the vibrant colors, and the map
+              with the places the songs were written really put things into
+              perspective for me.
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/gc-1.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              I sent this to a friend, and he was like "Is this Arizona?" He was
+              right. Thankfully it was my brother driving; I think I was just
+              spacing out at the time.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/gc-2.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              Last time I was at the Grand Canyon, I might've been in 6th grade.
+              Maybe younger. It was great to be here again and experience it
+              like it was new.
+            </p>
+          </div>
+        </div>
+        <div class="big container">
+          <img src="./styles/images/gc-3.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              Tried walking down a little bit; it got so hot that regret set in.
+            </p>
+          </div>
+        </div>
+        <div class="wide container">
+          <img src="./styles/images/gc-4.jpeg" alt="" />
+          <div class="image-caption">
+            <p>
+              From my trip to Half Dome! We actually started hiking late because
+              we wanted to capture the sunset. It was worth it.
+            </p>
+          </div>
+        </div>
+        <div class="tall container">
+          <img src="./styles/images/halfdome-1.PNG" alt="" />
+          <div class="image-caption">
+            <p>
+              Got to the base of Half Dome at 2AM; this picture was taken at
+              5AM. This is the closest to an all-nighter I've ever pulled.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/halfdome-2.JPG" alt="" />
+          <div class="image-caption">
+            <p>Perhaps this is what triumph feels like.</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./styles/images/genshin-1.jpeg" alt="" />
+          <div class="image-caption">
+            <p>Don't ask questions you don't want the answer to.</p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <h3>Thanks for stopping by!</h3>
+
+      
+      <br />
+      <br />
+      <br />
     </div>
 
-    <script
-      nomodule
-      src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      nomodule
-      src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="dist/scripts/main.js"></script>
+    <div class="shape-blob"></div>
+    <div class="shape-blob one"></div>
+    <div class="shape-blob two"></div>
   </body>
 </html>
