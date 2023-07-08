@@ -10,11 +10,10 @@
 }
 
 html,
-body,
-main {
+body {
   margin: 0;
   height: 100%;
-  width: 100;
+  overflow-x: hidden;
   overflow: hidden;
 }
 
@@ -33,14 +32,14 @@ main {
 
 body {
   background: linear-gradient(-45deg, #d68665, #138086, #534666, #cd7672);
-  background-size: 400% 400%;
+  background-size: 100% 100%;
   animation: gradient 15s ease infinite;
   height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  position: relative;
 }
 
 @keyframes gradient {
@@ -58,8 +57,8 @@ body {
 .card {
   width: 75%;
   height: 80%;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 
   padding: 35px;
 
@@ -71,11 +70,17 @@ body {
   backdrop-filter: blur(15px);
   z-index: 4;
   position: relative;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .card::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
+}
+
+.card-footer {
+  font-size: 0.65em;
+  color: #446;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -115,9 +120,6 @@ body {
   }
   h3 {
     font-size: 6vw;
-  }
-  p {
-    font-size: 30px;
   }
 }
 
@@ -204,7 +206,7 @@ a {
   position: absolute;
   left: 70%;
   top: 50%;
-  z-index: -10;
+  z-index: -5;
 }
 
 .shape-blob.one {
@@ -215,7 +217,7 @@ a {
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate,
     movement_two 60s ease-in-out infinite both;
-  z-index: -10;
+  z-index: -5;
 }
 
 .shape-blob.two {
@@ -226,7 +228,7 @@ a {
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate,
     movement_two 60s ease-in-out infinite both;
-  z-index: -10;
+  z-index: -5;
 }
 
 @keyframes transform {
@@ -507,9 +509,8 @@ a {
   justify-content: center;
   align-items: center;
   outline: none;
-  width: 15vh;
-  height: 15vh;
-  font-size: 8vh;
+  width: 64px;
+  height: 64px;
   text-decoration: none;
   border-radius: 100%;
   background: #fff;
@@ -664,7 +665,7 @@ a {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 5vh;
+  font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -682,7 +683,7 @@ a {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 50px;
+  font-size: 36px;
   margin-left: 50px;
 }
 
@@ -690,14 +691,14 @@ a {
 .openbtn {
   top: 0;
   left: 1vh;
-  font-size: 10vh;
+  font-size: 10vw;
   cursor: pointer;
   color: white;
   padding: 0.3vw 0.3vw;
   border: none;
   background: transparent;
-  z-index: 10;
   position: absolute;
+  z-index: 15;
 }
 
 .openbtn:hover {
@@ -710,6 +711,7 @@ a {
   padding: 20px;
   z-index: 1;
   position: absolute;
+  overflow: hidden;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -718,10 +720,28 @@ a {
     padding-top: 15px;
   }
   .sidebar a {
-    font-size: 50px;
+    font-size: 18px;
   }
 }
 
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  width: 34px;
+  height: 55px;
+  opacity: 0;
+  transition: opacity 10s;
+}
+
+.o-scroll:hover .scroll-downs {
+  opacity: 0.9;
+}
+
 a {
-  font-family: "montreal";
+  font-family: "roman";
 }
