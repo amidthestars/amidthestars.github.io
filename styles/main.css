@@ -40,6 +40,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 @keyframes gradient {
@@ -506,8 +507,9 @@ a {
   justify-content: center;
   align-items: center;
   outline: none;
-  width: 64px;
-  height: 64px;
+  width: 15vh;
+  height: 15vh;
+  font-size: 8vh;
   text-decoration: none;
   border-radius: 100%;
   background: #fff;
@@ -655,14 +657,14 @@ a {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  z-index: 5;
+  z-index: 30;
 }
 
 /* The sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 1000px;
+  font-size: 5vh;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -680,15 +682,15 @@ a {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 1000px;
+  font-size: 50px;
   margin-left: 50px;
 }
 
 /* The button used to open the sidebar */
 .openbtn {
   top: 0;
-  left: 0;
-  font-size: 20000px;
+  left: 1vh;
+  font-size: 10vh;
   cursor: pointer;
   color: white;
   padding: 0.3vw 0.3vw;
@@ -721,5 +723,5 @@ a {
 }
 
 a {
-  font-family: "roman";
+  font-family: "montreal";
 }
