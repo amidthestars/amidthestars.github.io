@@ -15,6 +15,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow: hidden;
+  position: relative;
 }
 
 @font-face {
@@ -57,8 +58,8 @@ body {
 .card {
   width: 75%;
   height: 80%;
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 
   padding: 35px;
 
@@ -76,11 +77,6 @@ body {
 
 .card::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
-}
-
-.card-footer {
-  font-size: 0.65em;
-  color: #446;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -691,7 +687,7 @@ a {
 .openbtn {
   top: 0;
   left: 1vh;
-  font-size: 10vw;
+  font-size: 7vh;
   cursor: pointer;
   color: white;
   padding: 0.3vw 0.3vw;
@@ -743,5 +739,10 @@ a {
 }
 
 a {
-  font-family: "roman";
+  font-family: "montreal";
+}
+
+.boguswrapper {
+  overflow: hidden;
+  position: relative;
 }
