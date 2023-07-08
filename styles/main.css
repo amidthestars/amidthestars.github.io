@@ -10,9 +10,11 @@
 }
 
 html,
-body {
+body,
+main {
   margin: 0;
   height: 100%;
+  width: 100;
   overflow: hidden;
 }
 
@@ -55,8 +57,8 @@ body {
 .card {
   width: 75%;
   height: 80%;
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 
   padding: 35px;
 
@@ -73,11 +75,6 @@ body {
 
 .card::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
-}
-
-.card-footer {
-  font-size: 0.65em;
-  color: #446;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -116,7 +113,10 @@ body {
     padding-bottom: 40vh;
   }
   h3 {
-    font-size: 5vw;
+    font-size: 6vw;
+  }
+  p {
+    font-size: 30px;
   }
 }
 
@@ -203,7 +203,7 @@ a {
   position: absolute;
   left: 70%;
   top: 50%;
-  z-index: -5;
+  z-index: -10;
 }
 
 .shape-blob.one {
@@ -214,7 +214,7 @@ a {
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate,
     movement_two 60s ease-in-out infinite both;
-  z-index: -5;
+  z-index: -10;
 }
 
 .shape-blob.two {
@@ -225,7 +225,7 @@ a {
   transform: rotate(-180deg);
   animation: transform 30s ease-in-out infinite both alternate,
     movement_two 60s ease-in-out infinite both;
-  z-index: -5;
+  z-index: -10;
 }
 
 @keyframes transform {
@@ -662,7 +662,7 @@ a {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1000px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -680,18 +680,22 @@ a {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 1000px;
   margin-left: 50px;
 }
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 3vw;
+  top: 0;
+  left: 0;
+  font-size: 20000px;
   cursor: pointer;
   color: white;
   padding: 0.3vw 0.3vw;
   border: none;
   background: transparent;
+  z-index: 10;
+  position: absolute;
 }
 
 .openbtn:hover {
@@ -712,26 +716,8 @@ a {
     padding-top: 15px;
   }
   .sidebar a {
-    font-size: 18px;
+    font-size: 50px;
   }
-}
-
-.scroll-downs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-
-  width: 34px;
-  height: 55px;
-  opacity: 0;
-  transition: opacity 10s;
-}
-
-.o-scroll:hover .scroll-downs {
-  opacity: 0.9;
 }
 
 a {
